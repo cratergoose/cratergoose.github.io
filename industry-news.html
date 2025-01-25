@@ -44,6 +44,9 @@
     <header class="header news-header" role="banner">
         <nav class="nav-container" role="navigation" aria-label="Main navigation">
             <div class="logo"><i class="fas fa-mountain" aria-hidden="true"></i> Crater <i class="fas fa-kiwi-bird" aria-hidden="true"></i> Goose</div>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
             <div class="nav-links">
                 <a href="index.html#services">Services</a>
                 <a href="index.html#process">Our Process</a>
@@ -151,5 +154,27 @@
     </footer>
 
     <script src="news-script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuBtn = document.querySelector('.mobile-menu-btn');
+            const menuIcon = menuBtn.querySelector('i');
+            const navLinks = document.querySelector('.nav-links');
+            const links = navLinks.querySelectorAll('a');
+
+            menuBtn.addEventListener('click', function() {
+                navLinks.classList.toggle('active');
+                menuIcon.classList.toggle('fa-bars');
+                menuIcon.classList.toggle('fa-times');
+            });
+
+            links.forEach(link => {
+                link.addEventListener('click', function() {
+                    navLinks.classList.remove('active');
+                    menuIcon.classList.remove('fa-times');
+                    menuIcon.classList.add('fa-bars');
+                });
+            });
+        });
+    </script>
 </body>
 </html>
