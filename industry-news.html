@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Stay updated with the latest trends, news, and insights in the timeshare exit and marketing industries. Expert analysis and updates from Crater Goose.">
+    <meta name="keywords" content="timeshare exit news, timeshare industry updates, marketing trends, timeshare exit insights, industry analysis">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Crater Goose">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Industry News & Insights | Crater Goose">
+    <meta property="og:description" content="Stay informed with the latest timeshare exit industry news, marketing trends, and expert insights from Crater Goose.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cratergoose.com/industry-news">
+    <meta property="og:site_name" content="Crater Goose">
+    
+    <title>Industry News & Insights | Crater Goose</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="news-styles.css">
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "Crater Goose Industry News & Insights",
+      "description": "Latest trends, news, and insights in the timeshare exit and marketing industries.",
+      "url": "https://cratergoose.com/industry-news",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Crater Goose",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://cratergoose.com/logo.png"
+        }
+      }
+    }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header news-header" role="banner">
+        <nav class="nav-container" role="navigation" aria-label="Main navigation">
+            <div class="logo"><i class="fas fa-mountain" aria-hidden="true"></i> Crater <i class="fas fa-kiwi-bird" aria-hidden="true"></i> Goose</div>
+            <div class="nav-links">
+                <a href="index.html#services">Services</a>
+                <a href="index.html#process">Our Process</a>
+                <a href="industry-news.html">News</a>
+                <a href="index.html#about">About Us</a>
+                <a href="index.html#contact" class="cta-button">Free Consultation</a>
+            </div>
+        </nav>
+        <div class="hero">
+            <h1>Industry News & Insights</h1>
+            <p>Stay updated with the latest trends, news, and insights in the timeshare exit and marketing industries.</p>
+        </div>
+    </header>
+
+    <main id="main-content" role="main">
+        <section class="news-filters">
+            <div class="filter-container">
+                <select id="categoryFilter" aria-label="Filter articles by category">
+                    <option value="all">All Categories</option>
+                    <option value="legal">Legal Updates</option>
+                    <option value="marketing">Marketing Innovations</option>
+                    <option value="trends">Trends in Timeshare Exit</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="news-grid" id="newsGrid">
+            <!-- Sample Article 1 -->
+            <article class="news-card" data-category="legal">
+                <div class="news-image">
+                    <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Legal document and gavel" loading="lazy">
+                </div>
+                <div class="news-content">
+                    <span class="news-category">Legal Updates</span>
+                    <h2>New Regulations Impact Timeshare Exit Industry</h2>
+                    <p class="news-excerpt">Recent legislative changes are reshaping how timeshare exit companies operate. Learn about the key updates and their implications for the industry.</p>
+                    <div class="news-meta">
+                        <span class="news-date">January 20, 2025</span>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Sample Article 2 -->
+            <article class="news-card" data-category="marketing">
+                <div class="news-image">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Marketing analytics dashboard" loading="lazy">
+                </div>
+                <div class="news-content">
+                    <span class="news-category">Marketing Innovations</span>
+                    <h2>Digital Marketing Trends Transforming the Industry</h2>
+                    <p class="news-excerpt">Discover how AI-driven marketing and personalization are creating new opportunities for timeshare exit companies to reach their target audience.</p>
+                    <div class="news-meta">
+                        <span class="news-date">January 15, 2025</span>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Sample Article 3 -->
+            <article class="news-card" data-category="trends">
+                <div class="news-image">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Team meeting discussing trends" loading="lazy">
+                </div>
+                <div class="news-content">
+                    <span class="news-category">Trends in Timeshare Exit</span>
+                    <h2>Emerging Consumer Trends in Timeshare Exit</h2>
+                    <p class="news-excerpt">Analysis of changing consumer behaviors and preferences in the timeshare exit market, with insights for businesses adapting to new demands.</p>
+                    <div class="news-meta">
+                        <span class="news-date">January 10, 2025</span>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <div class="load-more-container">
+            <button id="loadMore" class="load-more-button">Load More Articles</button>
+        </div>
+
+        <section class="news-cta">
+            <div class="cta-content">
+                <h2>Stay Informed with Industry Updates</h2>
+                <p>Get the latest news and insights delivered directly to your inbox.</p>
+                <a href="#contact" class="cta-button-large">Schedule a Free Consultation</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Crater Goose</h3>
+                <p>Your Trusted Partner in Timeshare Exit Marketing Solutions</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Phone: <a href="tel:+18885550123">(888) 555-0123</a></p>
+                <p>Email: <a href="mailto:help@cratergoose.com">help@cratergoose.com</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Crater Goose. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="news-script.js"></script>
+</body>
+</html>
