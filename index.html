@@ -67,6 +67,9 @@
     <header class="header" role="banner">
         <nav class="nav-container" role="navigation" aria-label="Main navigation">
             <div class="logo"><i class="fas fa-mountain" aria-hidden="true"></i> Crater <i class="fas fa-kiwi-bird" aria-hidden="true"></i> Goose</div>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
             <div class="nav-links">
                 <a href="#services" aria-label="View our services">Services</a>
                 <a href="#process" aria-label="Learn about our process">Our Process</a>
@@ -202,5 +205,27 @@
             <p>&copy; 2025 Crater Goose. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuBtn = document.querySelector('.mobile-menu-btn');
+            const menuIcon = menuBtn.querySelector('i');
+            const navLinks = document.querySelector('.nav-links');
+            const links = navLinks.querySelectorAll('a');
+
+            menuBtn.addEventListener('click', function() {
+                navLinks.classList.toggle('active');
+                menuIcon.classList.toggle('fa-bars');
+                menuIcon.classList.toggle('fa-times');
+            });
+
+            links.forEach(link => {
+                link.addEventListener('click', function() {
+                    navLinks.classList.remove('active');
+                    menuIcon.classList.remove('fa-times');
+                    menuIcon.classList.add('fa-bars');
+                });
+            });
+        });
+    </script>
 </body>
 </html>
